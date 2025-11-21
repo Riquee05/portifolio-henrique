@@ -207,15 +207,15 @@ li {
     display: inline-block; 
     
     padding: 12px 25px;
+    margin-top: 25px; /* Espaço para separar dos ícones */
     
     /* Usa a cor de destaque (verde neon) para o fundo do botão */
     background-color: var(--cor-destaque, rgba(154,205,50)); 
     color: rgb(31, 31, 54); /* Cor escura para alto contraste no texto */
     
+    font-size: 1.2em; /* Fonte um pouco maior */
     font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    
+    border-radius: 50px; /* Opcional: Borda mais arredondada para um visual "pílula" */
     /* Centraliza o botão dentro do seu contêiner */
     margin: 20px auto 0; 
     
