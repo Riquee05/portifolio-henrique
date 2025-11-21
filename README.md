@@ -16,10 +16,9 @@ Atualmente, meu foco é no desenvolvimento **Full-Stack**, com especialização 
 
 Este portfólio estático foi construído com as seguintes tecnologias:
 
-* **Linguagens:** HTML5, CSS3, JavaScript (Estrutura e Estilo).
+* **Linguagens:** HTML5 e CSS3 (Estrutura e Estilo).
 * **Design/Estilo:** CSS Moderno (Flexbox), Tema Dark/Neon, Font Awesome (Ícones).
 * **Conceitos:** Layout Responsivo, Semântica HTML, Variáveis CSS.
-* **Cloud & Back-End (Foco de Estudo):** Python, AWS (conceitos básicos), Google Firebase (utilizado em projetos anexos).
 
 ---
 
@@ -31,7 +30,7 @@ Os seguintes projetos demonstram minha capacidade de aplicar código para resolv
 | :--- | :--- | :--- |
 | **Sistema de Monitoramento** | HTML, JS, Firebase, API OpenStreetMap | [Acessar Demo](https://monitoramento-app-weback.web.app/) |
 | **Gerenciamento de Pedidos** | HTML, CSS, JavaScript, Google Firebase | [Acessar Demo](https://riquee05.github.io/ativos-weback/) |
-| **Email Automático ERP** | HTML (Implementação de Layout para ERP Eloca) | [Ver Detalhes na Página]([Link para seu portfólio]) |
+| **Email Automático ERP** | HTML (Implementação de Layout para ERP Eloca) |
 
 ---
 
@@ -40,7 +39,7 @@ Os seguintes projetos demonstram minha capacidade de aplicar código para resolv
 | Recurso | Link |
 | :--- | :--- |
 | **Portfólio Online** | [Link para o seu GitHub Pages ou Vercel/Netlify] |
-| **LinkedIn** | [Seu Link do LinkedIn] |
+| **LinkedIn** | 'https://www.linkedin.com/in/henrique-oliveira-a614a2147' |
 | **GitHub** | `https://github.com/Riquee05` |
 
 ### Como Executar Localmente
