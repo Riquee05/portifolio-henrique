@@ -1,0 +1,363 @@
+/* ================================================= */
+
+/* ESTILOS GERAIS DO CORPO (BODY)           */
+
+/* ================================================= */
+
+body {
+
+    /* Define a cor de fundo para a página inteira (Verde Escuro) */
+
+    background-color: rgb(2, 43, 43);
+
+}
+
+
+
+/* ================================================= */
+
+/* ESTILOS DO TÍTULO PRINCIPAL (h1)       */
+
+/* ================================================= */
+
+h1 {
+
+    /* Cor do texto do título */
+
+    color: beige;
+
+    /* Propriedades 'text-decoration: none;' e 'list-style: none;' removidas pois não se aplicam a h1. */
+
+    /* Define a família da fonte do título */
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size:xx-large;
+
+}
+
+
+
+a h1 {
+
+    text-decoration: none;
+
+}
+
+
+
+/* ================================================= */
+
+/* CONTÊINER PRINCIPAL DA BARRA DE NAVEGAÇÃO   */
+
+/* ================================================= */
+
+.menu-principal {
+
+    /* Define a cor de fundo (Azure transparente) */
+
+    background-color: rgba(240, 255, 255, 0);
+
+   
+
+    /* Cor do texto (Cinza/Lavanda) - Removido, pois os links (<a>) definem a cor. */
+
+    /* color: rgb(108, 108, 128); */
+
+
+
+    /* Borda: 1px de espessura e estilo sólido. Adiciona cor para maior controle */
+
+    border: 1px solid beige;
+
+    /* Padding interno: 10px em todos os lados (Vertical e Horizontal) */
+
+    padding: 10px 10px;
+
+
+
+    /* Tamanho e peso da fonte (aplicado ao container) */
+
+    font-size: medium;
+
+    font-weight: bold;
+
+
+
+    /* Arredondamento dos cantos do container */
+
+    border-radius: 10px;
+
+
+
+    /* Cursor: Movido para os links (<a>) */
+
+    /* cursor: pointer; */
+
+
+
+    /* Sombra ajustada: Mais suave e menos deslocada */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* ================================================= */
+
+/* ESTILOS DOS LINKS INDIVIDUAIS (<a>)        */
+
+/* ================================================= */
+
+.menu-principal a {
+
+    color: beige;
+
+    text-decoration: none;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: large;
+
+    cursor: pointer;
+
+   
+
+    /* NOVO EFEITO: Transição suave para todas as mudanças de estilo */
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+/* ================================================= */
+
+/* ESTILOS DA LISTA ORDENADA (<ul>)          */
+
+/* ================================================= */
+
+.menu-principal ul {
+
+    /* Remove os marcadores de lista (bolinhas) */
+
+    list-style: none;
+
+    /* Alinha os itens da lista horizontalmente */
+
+    display: flex;
+
+    /* Espaço entre os itens da lista (links) */
+
+    gap: 30px;
+
+    /* Padding interno da lista: 15px Vertical (topo/base) e 10px Horizontal (lados) */
+
+    padding: 15px 10px;
+
+}
+
+
+
+/* ================================================= */
+
+/* ESTILOS DE INTERAÇÃO (HOVER)                 */
+
+/* ================================================= */
+
+.menu-principal a:hover {
+
+    color: #3498db;
+
+    text-decoration: underline;
+
+   
+
+    /* NOVO EFEITO: Aumenta o link em 5% no hover */
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* ================================================= */
+
+/* RESET GERAL DA TAG NAV E LISTA           */
+
+/* ================================================= */
+
+nav {
+
+    /* Remove padding padrão do navegador */
+
+    padding: 0;
+
+    /* Remove margin padrão do navegador */
+
+    margin: 0;
+
+}
+
+
+
+nav ul {
+
+    /* Cor do texto dentro da lista (Bege) - Pode ser removida, pois <a> já define a cor */
+
+    /* color: beige; */
+
+    /* Remove padding padrão do navegador (reset) */
+
+    padding: 0;
+
+    /* Remove margin padrão do navegador (reset) */
+
+    margin: 0;
+
+}
+
+
+
+main {
+
+    margin-top: 50px;
+
+   
+
+}
+
+
+
+main p {
+
+    /* Garante que o texto seja claro */
+
+    color: beige;
+
+   
+
+    /* Define um tamanho de fonte legível */
+
+    font-size: 1.1em;
+
+   
+
+    /* Altura da linha para melhorar a leitura (geralmente 1.5 a 1.6) */
+
+    line-height: 1.6;
+
+   
+
+    /* Adiciona margem na parte inferior para separar parágrafos */
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* Estilo para títulos secundários (como o 'Estudante de ADS...') */
+
+h2 {
+
+    color: lightgray; /* Um cinza claro para títulos menores */
+
+    font-size: 1.8em;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+main h3 {
+
+    color: beige;
+
+    font-size: medium;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: bolder;
+
+}
+
+
+
+footer {
+
+    margin-top: 5%;
+
+    color: lightgrey;
+
+    font-size: small;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-weight: bolder;
+
+}
+
+
+
+.lista-contatos {
+
+    color: lightgray;
+
+    font-size: medium;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-decoration: none;
+
+}
+
+
+
+.lista-contatos a {
+
+    text-decoration: none;
+
+    list-style: none;
+
+}
+
+
+
+.lista-contatos strong {
+
+    text-decoration: dashed;
+
+    list-style: none;
+
+}
+
+
+
+.lista-contatos li {
+
+    list-style: none;
+
+
+
+}
+
+
+
+a {
+
+    color:beige
+
+}
+
+
+
+header h1 {
+
+
+
+    text-decoration: none;
+
+}
