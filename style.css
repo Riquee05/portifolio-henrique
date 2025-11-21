@@ -1,363 +1,406 @@
 /* ================================================= */
-
-/* ESTILOS GERAIS DO CORPO (BODY)           */
-
+/* CONFIGURAÇÕES GLOBAIS / TEMA BASE */
 /* ================================================= */
-
 body {
-
-    /* Define a cor de fundo para a página inteira (Verde Escuro) */
-
-    background-color: rgb(2, 43, 43);
-
+    background-color: rgb(31, 31, 54);
+    /* Adiciona transição suave para preparação do tema dinâmico */
+    transition: background-color 0.5s ease;
+    color: rgb(204, 204, 204); /* Define a cor padrão do texto (para tags como <p>) */
+    text-align: center;
 }
 
-
-
 /* ================================================= */
-
-/* ESTILOS DO TÍTULO PRINCIPAL (h1)       */
-
+/* ESTILOS DOS TÍTULOS */
 /* ================================================= */
 
 h1 {
-
-    /* Cor do texto do título */
-
-    color: beige;
-
-    /* Propriedades 'text-decoration: none;' e 'list-style: none;' removidas pois não se aplicam a h1. */
-
-    /* Define a família da fonte do título */
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    font-size:xx-large;
-
+    /* Cor de destaque para o h1 */
+    color: rgba(154,205,50); 
+    font-size: 3em; /* Tamanho maior para impacto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px; /* Espaçamento sutil */
+    text-shadow: 0 0 5px rgba(154,205,50,0.5); /* Efeito neon sutil */
 }
-
-
-
-a h1 {
-
-    text-decoration: none;
-
-}
-
-
-
-/* ================================================= */
-
-/* CONTÊINER PRINCIPAL DA BARRA DE NAVEGAÇÃO   */
-
-/* ================================================= */
-
-.menu-principal {
-
-    /* Define a cor de fundo (Azure transparente) */
-
-    background-color: rgba(240, 255, 255, 0);
-
-   
-
-    /* Cor do texto (Cinza/Lavanda) - Removido, pois os links (<a>) definem a cor. */
-
-    /* color: rgb(108, 108, 128); */
-
-
-
-    /* Borda: 1px de espessura e estilo sólido. Adiciona cor para maior controle */
-
-    border: 1px solid beige;
-
-    /* Padding interno: 10px em todos os lados (Vertical e Horizontal) */
-
-    padding: 10px 10px;
-
-
-
-    /* Tamanho e peso da fonte (aplicado ao container) */
-
-    font-size: medium;
-
-    font-weight: bold;
-
-
-
-    /* Arredondamento dos cantos do container */
-
-    border-radius: 10px;
-
-
-
-    /* Cursor: Movido para os links (<a>) */
-
-    /* cursor: pointer; */
-
-
-
-    /* Sombra ajustada: Mais suave e menos deslocada */
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
-}
-
-
-
-/* ================================================= */
-
-/* ESTILOS DOS LINKS INDIVIDUAIS (<a>)        */
-
-/* ================================================= */
-
-.menu-principal a {
-
-    color: beige;
-
-    text-decoration: none;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    font-size: large;
-
-    cursor: pointer;
-
-   
-
-    /* NOVO EFEITO: Transição suave para todas as mudanças de estilo */
-
-    transition: all 0.3s ease-in-out;
-
-}
-
-
-
-/* ================================================= */
-
-/* ESTILOS DA LISTA ORDENADA (<ul>)          */
-
-/* ================================================= */
-
-.menu-principal ul {
-
-    /* Remove os marcadores de lista (bolinhas) */
-
-    list-style: none;
-
-    /* Alinha os itens da lista horizontalmente */
-
-    display: flex;
-
-    /* Espaço entre os itens da lista (links) */
-
-    gap: 30px;
-
-    /* Padding interno da lista: 15px Vertical (topo/base) e 10px Horizontal (lados) */
-
-    padding: 15px 10px;
-
-}
-
-
-
-/* ================================================= */
-
-/* ESTILOS DE INTERAÇÃO (HOVER)                 */
-
-/* ================================================= */
-
-.menu-principal a:hover {
-
-    color: #3498db;
-
-    text-decoration: underline;
-
-   
-
-    /* NOVO EFEITO: Aumenta o link em 5% no hover */
-
-    transform: scale(1.05);
-
-}
-
-
-
-/* ================================================= */
-
-/* RESET GERAL DA TAG NAV E LISTA           */
-
-/* ================================================= */
-
-nav {
-
-    /* Remove padding padrão do navegador */
-
-    padding: 0;
-
-    /* Remove margin padrão do navegador */
-
-    margin: 0;
-
-}
-
-
-
-nav ul {
-
-    /* Cor do texto dentro da lista (Bege) - Pode ser removida, pois <a> já define a cor */
-
-    /* color: beige; */
-
-    /* Remove padding padrão do navegador (reset) */
-
-    padding: 0;
-
-    /* Remove margin padrão do navegador (reset) */
-
-    margin: 0;
-
-}
-
-
-
-main {
-
-    margin-top: 50px;
-
-   
-
-}
-
-
-
-main p {
-
-    /* Garante que o texto seja claro */
-
-    color: beige;
-
-   
-
-    /* Define um tamanho de fonte legível */
-
-    font-size: 1.1em;
-
-   
-
-    /* Altura da linha para melhorar a leitura (geralmente 1.5 a 1.6) */
-
-    line-height: 1.6;
-
-   
-
-    /* Adiciona margem na parte inferior para separar parágrafos */
-
-    margin-bottom: 20px;
-
-}
-
-
-
-/* Estilo para títulos secundários (como o 'Estudante de ADS...') */
 
 h2 {
-
-    color: lightgray; /* Um cinza claro para títulos menores */
-
-    font-size: 1.8em;
-
-    margin-bottom: 15px;
-
+    color: rgb(204, 204, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-main h3 {
-
-    color: beige;
-
-    font-size: medium;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    font-weight: bolder;
-
+h3 {
+    color: bisque; /* Bom para contraste em texto secundário */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-footer {
-
-    margin-top: 5%;
-
-    color: lightgrey;
-
-    font-size: small;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    font-weight: bolder;
-
+/* ================================================= */
+/* ESTILOS DO MENU DE NAVEGAÇÃO */
+/* ================================================= */
+.menu-principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* Configurações visuais */
+    background-color: var(--menu-fundo, rgba(255, 255, 255, 0.05)); /* Fundo semi-transparente */
+    border: 2px solid var(--cor-borda, rgba(154,205,50,0.8)); /* Borda com a cor de destaque */
+    border-radius: 30px;
+    padding: 15px 30px; /* Padding ajustado */
+    max-width: 800px;
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(154,205,50,0.2); /* Sombra neon */
 }
 
+.menu-principal ul {
+    display: flex; 
+    justify-content: center; /* Centraliza os links dentro do menu */
+    gap: 40px; 
+    list-style: none; /* CORRETO: remove as bolinhas */
+    padding: 0; /* REMOVE o padding padrão da lista */
+    margin: 0; /* REMOVE a margin padrão da lista */
+}
 
+.menu-principal a {
+    font-size: 1.1em; /* Tamanho ajustado para legibilidade */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(154,205,50);
+    text-decoration: none; /* CORRETO: remove o sublinhado */
+    transition: color 0.3s ease; /* Transição para o hover */
+}
 
-.lista-contatos {
+.menu-principal a:hover {
+    color: white; /* Cor branca para alto contraste no hover */
+}
 
-    color: lightgray;
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    font-size: medium;
+h4 {
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(154,205,50);
+}
 
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero.apresentacao {
+    /* Centraliza todo o texto e elementos na seção */
+    text-align: center;
+    
+    /* Adiciona um bom espaçamento vertical para a seção respirar */
+    padding: 100px 20px 80px; 
+    
+    /* Limita a largura para garantir que o texto não se espalhe demais */
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+/* Estiliza a frase de impacto (h3) */
+.slogan-impacto {
+    color: bisque; /* Usando sua cor h3 */
+    font-size: 1.5em; 
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: normal; /* Deixa a frase menos pesada que os títulos */
+}
+
+/* Estilo para o status de disponibilidade */
+#hero p strong {
+    color: var(--cor-destaque, rgba(154,205,50)); /* Usa o verde neon */
+    font-size: 1.1em;
+    display: block; /* Garante que fique em uma linha separada */
+    margin-top: 15px;
+}
+
+/* ================================================= */
+/* ESTILO GERAL DOS BOTÕES (CTA) */
+/* ================================================= */
+
+/* Classe base para todos os botões (como btn-curriculo) */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    
+    /* Usa a cor de destaque (verde neon) para o fundo do botão */
+    background-color: var(--cor-destaque, rgba(154,205,50)); 
+    color: rgb(31, 31, 54); /* Cor escura do body para o texto (alto contraste) */
+    
+    font-weight: bold;
     text-decoration: none;
-
+    border-radius: 8px;
+    
+    /* Adiciona uma transição suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.btn:hover {
+    /* Clareia ligeiramente a cor no hover */
+    background-color: rgba(180, 255, 60, 0.9);
+    transform: translateY(-2px); /* Efeito de elevação sutil */
+    box-shadow: 0 4px 8px rgba(154,205,50,0.4); /* Sombra neon */
+}
 
+.cargo ul {
+    /* Garante que o marcador (bolinha) esteja DENTRO do fluxo de conteúdo */
+    /* Isso impede que ele fique muito deslocado para a esquerda. */
+    list-style-position: inside; 
+    
+    /* Remove a margem e o padding padrão do navegador */
+    /* O padding é o principal culpado por empurrar as bolinhas para fora */
+    padding-left: 0; 
+    margin: 10px 0;
+}
 
-.lista-contatos a {
+.cargo li {
+    /* Define o estilo da bolinha (disc é o padrão cheio) */
+    list-style: disc; 
+    
+    /* Adiciona um pequeno espaçamento para que a bolinha não grude no texto */
+    padding-left: 5px; 
+    
+    /* Garante espaço entre um item da lista e o próximo */
+    margin-bottom: 8px;
+    
+    /* Para dar um "respiro" no texto */
+    line-height: 1.5;
+}
 
+/* Container dos Ícones (WhatsApp, LinkedIn, GitHub, Instagram) */
+.contato-links-icones {
+    /* 1. Ativa o Flexbox para organizar os itens */
+    display: flex;        
+    
+    /* 2. Centraliza os ícones horizontalmente */
+    justify-content: center; 
+    
+    /* 3. Espaçamento entre os ícones */
+    gap: 30px;            
+    
+    /* Espaçamento vertical abaixo dos ícones */
+    margin-bottom: 30px; 
+}
+
+/* Garante que os ícones tenham o estilo que definimos antes */
+.contato-links-icones a {
+    /* Se a cor não estiver vindo das variáveis, defina uma aqui */
+    color: var(--cor-destaque, rgba(154,205,50)); 
+    font-size: 24px; /* Aumenta um pouco o tamanho para destaque */
     text-decoration: none;
-
-    list-style: none;
-
+    transition: transform 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-.lista-contatos strong {
-
-    text-decoration: dashed;
-
-    list-style: none;
-
+.contato-links-icones a:hover {
+    /* Efeito sutil no hover */
+    transform: scale(1.15); 
 }
 
-
-
-.lista-contatos li {
-
-    list-style: none;
-
-
-
+/* Ajuste do Título e Parágrafo da Seção Contato */
+#contato h2, #contato p {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-
-a {
-
-    color:beige
-
-}
-
-
-
-header h1 {
-
-
-
+/* Estilo do Botão de E-mail */
+.btn-email {
+    /* TRUQUE: Garante que o botão ocupe apenas o espaço necessário */
+    display: inline-block; 
+    
+    padding: 12px 25px;
+    
+    /* Usa a cor de destaque (verde neon) para o fundo do botão */
+    background-color: var(--cor-destaque, rgba(154,205,50)); 
+    color: rgb(31, 31, 54); /* Cor escura para alto contraste no texto */
+    
+    font-weight: bold;
     text-decoration: none;
+    border-radius: 8px;
+    
+    /* Centraliza o botão dentro do seu contêiner */
+    margin: 20px auto 0; 
+    
+    transition: background-color 0.3s ease;
+}
 
+.btn-email:hover {
+    background-color: rgba(180, 255, 60, 0.9);
+}
+
+/* ================================================= */
+/* ESTILIZAÇÃO ESPECÍFICA DA PÁGINA DO CURRÍCULO (.cv-page) */
+/* ================================================= */
+
+/* Define o layout principal para o CV */
+.cv-page {
+    /* Limita a largura para leitura confortável (como uma folha A4) */
+    max-width: 900px; 
+    margin: 40px auto; /* Centraliza na tela e dá espaço */
+    padding: 30px;
+    
+    /* Cores de Fundo Escuro para visualização na tela */
+    background-color: rgb(35, 35, 60); /* Um pouco mais claro que o body */
+    color: rgb(220, 220, 220); /* Texto Cinza Claro */
+    border-radius: 10px;
+}
+
+/* Estilo do cabeçalho principal do CV */
+.header-cv h1 {
+    color: var(--cor-destaque, rgba(154,205,50)); /* Cor Neon de Destaque */
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.header-cv p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: bisque;
+    margin-bottom: 20px;
+}
+
+/* Estilo das informações de contato (Email, LinkedIn, Telefone) */
+.contato-info {
+    display: flex;
+    justify-content: center; /* Centraliza as informações */
+    gap: 20px;
+    font-size: 0.9em;
+    color: rgb(180, 180, 180);
+}
+
+.contato-info a {
+    color: rgb(180, 180, 180); /* Links de contato na mesma cor */
+    text-decoration: none;
+}
+
+.contato-info i {
+    margin-right: 5px;
+    color: var(--cor-destaque, rgba(154,205,50)); /* Ícones em Neon */
+}
+
+/* Estilo para todas as seções principais (Objetivo, Habilidades, Experiência) */
+.section-cv {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px solid rgba(154,205,50, 0.5); /* Linha neon sutil de separação */
+}
+
+.section-cv h2 {
+    color: var(--cor-destaque, rgba(154,205,50));
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a experiência de trabalho */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: rgb(220, 220, 220); /* Nome da Empresa em cor clara */
+    margin-bottom: 2px;
+}
+
+.job h4 {
+    color: bisque; /* Cargo em cor secundária */
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Estilo da lista de habilidades (que está em <ul>) */
+.skills-list {
+    display: flex; /* Opcional: para listar em linha se for curto */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 15px 30px;
+    list-style: none; /* Remove bolinhas, pois é uma lista de tags */
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Botão de download (Estilo já definido na classe .btn-download) */
+.download-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ================================================= */
+/* OTIMIZAÇÃO PARA IMPRESSÃO / PDF (MUITO IMPORTANTE!) */
+/* ================================================= */
+
+@media print {
+    /* Esconde elementos desnecessários na impressão */
+    header, .download-section {
+        display: none;
+    }
+
+    /* Força o fundo branco e o texto preto para economizar tinta e ser legível */
+    body, .cv-page {
+        background-color: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    /* Faz o texto neon ficar preto */
+    .header-cv h1, .section-cv h2, .contato-info i {
+        color: black !important;
+        text-shadow: none !important;
+    }
+    
+    /* Remove a borda de separação */
+    .section-cv {
+        border-top: 1px solid #ccc !important;
+    }
+}
+
+@media print {
+    /* Esconde elementos desnecessários na impressão */
+    header, 
+    .download-section, 
+    footer /* Garante que seu footer HTML também suma */
+    {
+        display: none !important;
+    }
+    
+    /* ... (restante do seu CSS para impressão) ... */
+}
+
+.download-section {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-download {
+    /* Define como bloco para controle total de tamanho */
+    display: inline-block; 
+    
+    /* Preenchimento e Formato */
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    
+    /* Cores (Usando seu tema neon) */
+    background-color: var(--cor-destaque, rgba(154,205,50)); /* Fundo Verde Neon */
+    color: rgb(31, 31, 54); /* Texto Escuro (Alto Contraste) */
+    
+    /* Efeito visual */
+    box-shadow: 0 0 15px rgba(154,205,50,0.5); /* Sombra Neon para destacar */
+    transition: all 0.3s ease;
+}
+
+/* Estilo do Ícone dentro do botão */
+.btn-download i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 1.2em;
+}
+
+/* Efeito de Interação (Hover) */
+.btn-download:hover {
+    background-color: white; /* Muda para branco no hover */
+    color: rgb(31, 31, 54); /* Mantém o texto escuro */
+    transform: translateY(-3px); /* Efeito de leve elevação */
+    box-shadow: 0 8px 15px rgba(154,205,50,0.7); /* Sombra mais forte */
 }

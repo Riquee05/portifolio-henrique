@@ -3,38 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henrique Oliveira | Full-Stack Developer</title> <link rel="stylesheet" href="style.css">
+    <title>Henrique Oliveira | Dev & Sistemas</title> 
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     
     <header>
-            <h1>Henrique Oliveira</h1>
-        
         <nav class="menu-principal">
             <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="https://github.com/Riquee05" target="_blank">GitHub</a></li>
+                <li><a href="#hero"><strong>{ início }</strong></a></li> 
+                <li><a href="#sobre"><strong>{ Sobre }</strong></a></li>
+                <li><a href="#experiencia"><strong>{ Experiência }</strong></a></li>
+                <li><a href="#projetos"><strong>{ Projetos }</strong></a></li>
+                <li><a href="#contato"><strong>{ Contato }</strong></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Estudante de ADS e Desenvolvedor Full-Stack</h2>
-            <h3>HTML, CSS e Python: Soluções Integradas</h3>
+        
+        <section id="hero" class="apresentacao">
+            <h1><strong> /Henrique Silva/ </strong></h1>
+            <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+            
+            <h3 class="slogan-impacto">Solucionador de problemas por experiência, construtor de sistemas por paixão.</h3>
+            
+            <p><strong>{Disponível para Estágio.}</strong></p>
+            
+            <a href="Curriculo.html" class="btn btn-curriculo">Acesse Meu Currículo</a>
+        </section>
+        
+        <section id="sobre" class="conteudo-principal">
+            <h2>Sobre Mim</h2>
+            
+            <p>Com 26 anos, sou um profissional de TI com cinco anos de experiência em Locação de Hardware e Serviços, o que me proporcionou forte visão de negócio e resolução de problemas.</p>
+            
+            <p>Atualmente, estou aprofundando meus conhecimentos formais em Análise e Desenvolvimento de Sistemas (ADS), especializando-me em Desenvolvimento Web. Busco aplicar minhas habilidades em HTML, CSS e Python para entregar soluções Full-Stack funcionais e eficientes.</p>
+            
+            <p class="status-estagio">Aberto a oportunidades de Estágio.</p>
         </section>
 
-        <section class="sobre-mim">
-            <p>Olá, sou o Henrique, tenho 26 anos e possuo 5 anos de atuação no mercado de TI, na área de Locação de Hardware e Serviços.</p>
-            <p>Atualmente, estou me graduando em Análise e Desenvolvimento de Sistemas, com foco na carreira de Desenvolvimento Web, utilizando HTML, CSS e Python.</p>
-            <p><strong>Disponível para Estágio</strong>. Vamos construir algo juntos!</p>
+        <section id="experiencia" class="conteudo-principal">
+            <h2>Experiência Profissional</h2>
+            
+            <article class="cargo">
+                <h3>Weback (2023 - Atualmente)</h3>
+                
+                <h4><strong> {Armazenista e Líder de Estoque}:</strong></h4>
+                <ul>
+                    <li>Liderança de Estoque, Inventários Cíclicos, e gestão da Vida Útil do Equipamento.</li>
+                    <li>Experiência Fiscal em Recebimento e Devolução de equipamentos.</li>
+                </ul>
+
+                <h4>{Preparação e Desenvolvimento (TI)}:</h4>
+                <ul>
+                    <li>Preparação de Equipamentos: Formatação (Linux, Windows) e manutenção de Hardware.</li>
+                    <li>Desenvolvimento Web: Manutenções e melhorias no sistema ERP Eloca e Testes em Aplicativo Mobile.</li>
+                </ul>
+            </article>
+
+            <article class="cargo">
+                <h3>Voke (2019 - 2023)</h3>
+                
+                <h4>{Principais Responsabilidades}:</h4>
+                <ul>
+                    <li>Armazenista: Aprendizado sobre todo o ciclo de vida do equipamento (entrada até a Inutilização).</li>
+                    <li>Técnico de Preparação: Formatação, Upgrade/Downgrade de Memória e SSD/HD.</li>
+                    <li>Compras: Auxílio na compra de Notebooks/Desktops, peças e licenças, e relacionamento com fornecedores.</li>
+                </ul>
+            </article>
         </section>
+
+        <section id="projetos" class="conteudo-principal"> 
+            <h2>Meus Projetos</h2>
+
+            <article class="projeto-card">
+                <h3>Email Automático Sistema ERP Eloca</h3>
+                <img src="img/email.png" alt="Exemplo de Email Automático do Sistema ERP Eloca">
+                <p>Implementado em HTML, para notificar o cliente sobre a entrega ou devolução de equipamentos. Em produção no ERP Eloca.</p>
+            </article>
+
+            <article class="projeto-card">
+                <h3>Sistema de Gerenciamento de Pedidos</h3>
+                <img src="img/gerenciamento.png" alt="Interface do Sistema de Gerenciamento de Peididos">
+                <p>Desenvolvido em HTML, CSS, JavaScript e utilizando Google Firebase para Database. Permite criar, editar, excluir pedidos e exportar dados para Excel (.xlsx).</p>
+                <a href="https://riquee05.github.io/ativos-weback/" target="_blank" rel="noopener noreferrer" class="btn">Acesse o Projeto</a>
+            </article>
+
+            <article class="projeto-card">
+                <h3>Sistema de Monitoramento de Prestadores de Serviço</h3>
+                <img src="img/monitoramento.png" alt="Interface do Sistema de Monitoramento em Tempo Real">
+                <p>Criado com HTML, CSS, JavaScript e Google Firebase, integrando a API OpenStreetMap. O sistema permite monitorar Motoristas/Motoboys em tempo real durante a entrega/devolução de equipamentos.</p>
+                <a href="https://monitoramento-app-weback.web.app/" target="_blank" rel="noopener noreferrer" class="btn">Acesse o Projeto</a>
+            </article>
+
+        </section>
+
+        <section id="contato" class="contato-redes conteudo-principal">
+            <h2>Conecte-se</h2>
+            <p>Entre em contato nas principais redes ou me chame diretamente:</p>
+            
+            <div class="contato-links-icones">
+                <a href="https://wa.me/11964288920" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    Me chame no Whatsapp
+                </a>
+                <a href="https://www.linkedin.com/in/henrique-oliveira-a614a2147">Me Siga no Linkedin</a>
+
+                <a href="https://github.com/Riquee05">Me Siga no GitHub</a>
+
+                <a href="https://www.instagram.com/riquee05">Me Siga no Instagram</a>
+            </div>
+            
+            <a href="mailto:henriquetech.83@gmail.com">Ou Envie um E-mail</a>
+        </section>
+        
     </main>
 
     <footer>
-        <p>© Portfólio Pessoal Henrique Oliveira 2025</p>
+        <p>Portfólio Pessoal Henrique Silva | Desenvolvido com HTML e CSS.</p>
+        <p>&copy; 2025</p>
     </footer>
 
 </body>
