@@ -404,3 +404,51 @@ li {
     transform: translateY(-3px); /* Efeito de leve elevação */
     box-shadow: 0 8px 15px rgba(154,205,50,0.7); /* Sombra mais forte */
 }
+
+@media (max-width: 768px) {
+
+    /* --- 1. Ajuste Global do Conteúdo --- */
+    /* Garante que o conteúdo ocupe quase toda a tela, com pouco padding */
+    .conteudo-principal {
+        padding: 0 10px; 
+    }
+    
+    /* --- 2. Ajuste do Menu de Navegação --- */
+    /* Reduz o tamanho da borda e centraliza o menu superior */
+    .menu-principal {
+        max-width: 95%; /* Ocupa quase toda a largura */
+        border-radius: 5px; /* Borda menos arredondada */
+        padding: 10px 5px;
+        margin: 10px auto;
+    }
+    
+    /* Reduz o espaçamento entre os links do menu para caberem */
+    .menu-principal ul {
+        gap: 15px;
+    }
+    
+    /* --- 3. Ajuste dos Títulos e Hero --- */
+    #hero.apresentacao {
+        padding: 50px 10px 40px; /* Menos espaço vertical no topo */
+    }
+    
+    h1 {
+        font-size: 2em; /* Reduz o tamanho do título principal */
+    }
+
+    /* --- 4. Ajuste da Seção Contato (Ícones) --- */
+    /* Os ícones já usam Flexbox, mas vamos reduzir o tamanho para caber */
+    .contato-links-icones {
+        gap: 15px;
+    }
+    
+    .contato-links-icones a {
+        font-size: 20px; /* Reduz o tamanho do ícone */
+    }
+
+    /* --- 5. Ajuste dos Projetos (Se for em Grid/Flexbox) --- */
+    /* Se seus cards de projeto estiverem lado a lado, faça-os ficar em coluna */
+    .secao-projetos {
+        flex-direction: column; /* Força quebra de linha em telas menores */
+    }
+}
