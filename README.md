@@ -38,7 +38,7 @@ Os seguintes projetos demonstram minha capacidade de aplicar código para resolv
 
 | Recurso | Link |
 | :--- | :--- |
-| **Portfólio Online** | [Link para o seu GitHub Pages ou Vercel/Netlify] |
+| **Portfólio Online** | 'https://riquee05.github.io/portifolio-henrique/' |
 | **LinkedIn** | 'https://www.linkedin.com/in/henrique-oliveira-a614a2147' |
 | **GitHub** | `https://github.com/Riquee05` |
 
